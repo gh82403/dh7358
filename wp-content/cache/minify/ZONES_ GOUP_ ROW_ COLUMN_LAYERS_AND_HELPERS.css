@@ -1,0 +1,71 @@
+/***********************************************************
+	- 	ZONES / GOUP / ROW / COLUMN LAYERS AND HELPERS 	-
+***********************************************************/
+.rev_row_zone					{	position:absolute; width:100%;left:0px; box-sizing: border-box;min-height:50px; font-size:0px;}
+
+.rev_row_zone_top 				{	top:0px;}
+.rev_row_zone_middle 			{	top:50%; transform:translateY(-50%);}
+.rev_row_zone_bottom 			{	bottom:0px;}
+
+.rev_column .tp-parallax-wrap  { vertical-align: top }
+
+.rev_slider .tp-caption.rev_row 	{
+	display:table;
+	position:relative;
+	width:100% !important;
+	table-layout: fixed;
+	box-sizing: border-box;
+	vertical-align: top;
+	height:auto !important;
+	font-size:0px;
+}
+
+.rev_column {	
+	display: table-cell;
+	position: relative;
+	vertical-align: top;
+	height: auto;
+	box-sizing: border-box;	
+	font-size:0px;
+}
+
+.rev_column_inner {
+	box-sizing: border-box;
+	display: block;
+	position: relative;
+	width:100% !important;
+	height:auto !important;
+	white-space: normal !important;
+}
+
+.rev_column_bg {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    box-sizing: border-box;
+    background-clip: content-box;
+    border: 0px solid transparent;
+}
+
+
+
+.rev_column_inner .tp-parallax-wrap,
+.rev_column_inner .tp-loop-wrap,
+.rev_column_inner .tp-mask-wrap 			{	text-align: inherit; }
+.rev_column_inner .tp-mask-wrap 			{	display: inline-block;}
+
+
+.rev_column_inner .tp-parallax-wrap .tp-loop-wrap,
+.rev_column_inner .tp-parallax-wrap .tp-mask-wrap,
+.rev_column_inner .tp-parallax-wrap { position: relative !important; left:auto !important; top:auto !important; line-height: 0px;}
+
+.rev_column_inner .tp-parallax-wrap .tp-loop-wrap,
+.rev_column_inner .tp-parallax-wrap .tp-mask-wrap,
+.rev_column_inner .tp-parallax-wrap,
+.rev_column_inner .rev_layer_in_column { vertical-align: top; }
+
+.rev_break_columns { display: block !important }
+.rev_break_columns .tp-parallax-wrap.rev_column  { display:block !important; width:100% !important; }

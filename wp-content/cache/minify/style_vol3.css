@@ -1,0 +1,80 @@
+/***********************************************
+	-  STANDARD NAVIGATION SETTINGS 
+***********************************************/
+
+
+.tp-thumbs.navbar,
+.tp-bullets.navbar,
+.tp-tabs.navbar					{	border:none; min-height: 0; margin:0; border-radius: 0; }
+
+.tp-tabs,
+.tp-thumbs,
+.tp-bullets						{	position:absolute; display:block; z-index:1000; top:0px; left:0px;}
+
+.tp-tab,
+.tp-thumb 						{	cursor: pointer; position:absolute;opacity:0.5;  box-sizing: border-box;}
+
+.tp-arr-imgholder,
+.tp-videoposter,
+.tp-thumb-image,
+.tp-tab-image					{	background-position: center center; background-size:cover;width:100%;height:100%; display:block; position:absolute;top:0px;left:0px;}
+
+.tp-tab:hover,
+.tp-tab.selected,
+.tp-thumb:hover,
+.tp-thumb.selected				{	opacity:1;}
+
+.tp-tab-mask,
+.tp-thumb-mask 					{	box-sizing:border-box !important; }
+
+.tp-tabs,
+.tp-thumbs						{	box-sizing:content-box !important; }
+
+.tp-bullet 						{	width:15px;height:15px; position:absolute; background:#fff; background:rgba(255,255,255,0.3); cursor: pointer;}
+.tp-bullet.selected,
+.tp-bullet:hover				{	background:#fff;}
+
+
+
+
+.tparrows						{	cursor:pointer; background:#000; background:rgba(0,0,0,0.5); width:40px;height:40px;position:absolute; display:block; z-index:1000; }
+.tparrows:hover 				{	background:#000;}
+.tparrows:before				{	font-family: "revicons"; font-size:15px; color:#fff; display:block; line-height: 40px; text-align: center;}
+.tparrows.tp-leftarrow:before	{	content: '\e824'; }
+.tparrows.tp-rightarrow:before	{	content: '\e825'; }
+
+
+
+/***************************
+	- KEN BURNS FIXES -
+***************************/
+
+body.rtl .tp-kbimg {left: 0 !important}
+
+
+
+/***************************
+	- 3D SHADOW MODE -
+***************************/
+
+.dddwrappershadow { box-shadow:0 45px 100px rgba(0, 0, 0, 0.4);}
+
+/*******************
+	- DEBUG MODE -
+*******************/
+
+.hglayerinfo				   {	  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 5px 10px;
+  z-index: 2000;
+  white-space: normal;}
+.hginfo 					   { 	position:absolute;top:-2px;left:-2px;color:#e74c3c;font-size:12px;font-weight:600; background:#000;padding:2px 5px;}
+.indebugmode .tp-caption:hover { 	border:1px dashed #c0392b !important;}
+.helpgrid 					   { 	border:2px dashed #c0392b;position:absolute;top:0px;left:0px;z-index:0 }
+#revsliderlogloglog				{	padding:15px;color:#fff;position:fixed; top:0px;left:0px;width:200px;height:150px;background:rgba(0,0,0,0.7); z-index:100000; font-size:10px; overflow:scroll;}
