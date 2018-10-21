@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <title>title</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<style>
+		.mo-text-inner {
+			font-family: 'Poppins', serif;
+			font-weight: 600;
+			font-size: 19px;
+			text-transform: uppercase;
+		}
+		.gallery .item a.full {
+			cursor: pointer !important;
+		}
+		.item .mask {
+			background: #e5e5e5 !important;
+		}
+		.item:nth-child(2n) .mask {
+			background: #e5e5e5 !important;
+		}
+		.list-scroller-target {
+			background-color: #f2c121 !important;
+		}
+	</style>
+
+    <link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='thecs-fonts-css' href='wp-content/themes/thecs/css/fonts.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='thecs-font-awesome-css' href='wp-content/themes/thecs/css/font-awesome/font-awesome.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='thecs-pe-icon-7-css' href='wp-content/themes/thecs/css/pe-icon-7-stroke.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='thecs-other-css' href='wp-content/themes/thecs/css/other.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='thecs-style-css' href='wp-content/themes/thecs/style.css' type='text/css' media='all' />
+    <style id='thecs-style-inline-css' type='text/css'>
+        body,
+        textarea,
+        input,
+        button,
+        select {}
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        strong,
+        b,
+        mark,
+        legend,
+        blockquote {
+            font-weight: 700;
+        }
+
+        .wpcf7 form span.wpcf7-form-control-wrap input:focus,
+        .wpcf7 form span.wpcf7-form-control-wrap textarea:focus,
+        i.title-info,
+        .sc-btn.style-02 a:hover,
+        .site-light .color-invert .sc-btn.style-02 a:hover,
+        .site-dark .sc-btn.style-02 a:hover,
+        .pages a:hover,
+        .page-other .search-field:focus,
+        .pic-loader:after,
+        .loader-layer div:after,
+        .comment-root textarea:focus,
+        .comment-root p:not(.form-submit) input:focus,
+        .wc-tabs-wrapper input:not(.submit):focus,
+        input.qty:focus,
+        input#coupon_code:focus,
+        body:not(.woocommerce-cart) .woocommerce input.input-text:focus,
+        body .woocommerce textarea:focus {
+            border-color: #f2c121;
+        }
+
+        .summary>.price ins .amount span,
+        .owl-nav>div:hover,
+        .has-sub:hover:before,
+        .wpcf7>h5:before,
+        .wc-tabs li.active a:before,
+        .page-other a:hover em,
+        body:not(.m-mode) .blog-list .item .h:hover a,
+        header.style-05 .wrap>i.btn:hover:before,
+        .list-title .h:before,
+        i.title-info:before,
+        .default-template-page .text-area a:hover,
+        .ptsc .intro a:hover,
+        .pic-list .list-category a:hover,
+        a.more:hover:before,
+        a.list-date,
+        .call-widget-sub:hover,
+        body:not(.m-mode) .post-02 .ctrl:hover span:before,
+        .woocommerce-MyAccount-content a,
+        .woocommerce-checkout-payment li a,
+        #payment li.wc_payment_method>input[type="radio"]:first-child:checked+label:before,
+        .recentcomments span,
+        .widget a:hover,
+        .widget_archive li,
+        .widget_rss cite,
+        .widget_categories a {
+            color: #f2c121;
+        }
+
+        i.close-search:hover,
+        .hoverLine,
+        .title-text .h .mo-line,
+        .blog-list .list-category a:hover,
+        .item.sticky .img:before,
+        .sticky.text-post:before,
+        .pt-mouse-scroll-boxed .list-scroller,
+        .pt-mouse-scroll-boxed .list-scroller:after,
+        body:not(.m-mode) .list-icon i:hover,
+        body:not(.m-mode) .list-icon a:hover,
+        .pages a:hover,
+        i.close-sub-menu:hover,
+        i.close-hidden-menu:hover,
+        .sc-btn a:hover,
+        input.wpcf7-submit:hover,
+        .related.products a.add_to_cart_button:hover,
+        body:not(.m-mode) .pt-social a:hover,
+        .site-light .color-invert .pt-social a:hover,
+        .site-dark .color-invert .pt-social a:hover,
+        input[name="apply_coupon"],
+        a.checkout-button,
+        .site-dark .sc-btn.style-01 a:hover,
+        .site-light .sc-btn.style-01 a:hover,
+        .site-light .color-invert .sc-btn.style-01 a:hover,
+        .site-dark .color-invert .sc-btn.style-01 a:hover,
+        .site-dark .sc-btn.style-02 a:hover,
+        .site-light .sc-btn.style-02 a:hover,
+        .site-light .color-invert .sc-btn.style-02 a:hover,
+        .site-dark .color-invert .sc-btn.style-02 a:hover,
+        body:not(.m-mode) .pt-area-roll-wrap .pt-area-roll-btn:hover,
+        .woocommerce-mini-cart__buttons a:hover,
+        .v-ctrl:not(.v-mobile-play):hover,
+        .pt-swipe-dots li:before,
+        .owl-dots .active span,
+        .single_add_to_cart_button,
+        .share a:hover,
+        .post-tags a:hover,
+        input[name="login"],
+        input[name="register"],
+        button[name="login"],
+        button[name="register"],
+        i.close-list-widgets,
+        .related.products>h2:before,
+        .up-sells.upsells>h2:before,
+        .post-extend h2:before,
+        .pt-bar-group:hover .pt-bar,
+        .pths-bar-full .pt-mouse-scroll-boxed .list-scroller-target,
+        .comment-root:before,
+        .default-template-page .title.h:before,
+        .woocommerce-MyAccount-navigation li.is-active a,
+        #place_order.button,
+        input[name="save_account_details"]:hover,
+        input[name="save_address"]:hover,
+        i.close-depth-3:hover,
+        .tagcloud a {
+            background-color: #f2c121;
+        }
+
+        ::selection {
+            color: #fff;
+            background: #f2c121;
+            text-shadow: none;
+        }
+
+        html {
+            font-size: 15px;
+        }
+    </style>
+    <link rel='stylesheet' id='thecs-widget-css' href='wp-content/themes/thecs/css/widget.css' type='text/css' media='all' />
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery.js'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'></script>
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+</head>
+
+<body class="page-template page-template-page-gallery page-template-page-gallery-php page page-id-405 woocommerce-no-js site-light pths-bar-full" data-color="#f2c121">
+    <div class="loader-layer">
+        <div></div>
+    </div>
+    <div class="close-layer"></div>
+    <div class="site-bg bg-full" data-bg="wp-content/uploads/2017/12/bg_02.jpg"></div>
+
+
+
+
+
+	<header class="style-01">
+		<div class="wrap" style="padding-top:50px;"></div>
+	</header>
+
+
+
+
+
+    <div class="main-content">
+        <div class="pic-list style-01 gallery size-small disperse fixed fixed-h">
+            <div class="wrap">
+
+				<!--
+                <div class="item" data-w="800" data-h="504" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/12/p2-4-3-3-800x504.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/12/p2-4.jpg" data-title="Lorem ipsum"></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>Lorem ipsum</h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="item" data-w="800" data-h="533" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/10/b5-3-3-800x533.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/10/b5.jpg" data-title="Suspendisse "></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>Suspendisse </h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="item" data-w="800" data-h="533" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/10/b5-1-3-3-800x533.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/10/b5-1.jpg" data-title="scelerisque"></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>scelerisque</h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="item" data-w="800" data-h="533" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/10/b4-3-3-800x533.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/10/b4.jpg" data-title="egestas augue"></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>egestas augue</h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+				-->
+
+                <div class="item" data-w="800" data-h="533" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/10/b1-3-3-800x533.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/10/b1.jpg" data-title="egestas augue"></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>Enjoy</h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="item" data-w="800" data-h="533" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/10/b3-3-3-800x533.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/10/b3.jpg" data-title="scelerisque"></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>Incity</h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="item" data-w="800" data-h="508" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/10/s7-3-3-800x508.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/10/s7.jpg" data-title="egestas augue"></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>Liberty</h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="item" data-w="800" data-h="600" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/11/p1-3-3-800x600.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/11/p1.jpg" data-title="scelerisque"></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>Skyline</h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="item" data-w="800" data-h="533" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/10/b4-3-3-3-800x533.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/10/b4-3.jpg" data-title="egestas augue"></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>District</h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="item" data-w="800" data-h="450" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/10/b7-3-3-800x450.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/10/b7.jpg" data-title="scelerisque"></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>Brooklyn</h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="item" data-w="800" data-h="536" data-filter="filter-cat-0">
+                    <div class="img">
+                        <div class="bg-full" data-bg="wp-content/uploads/2017/10/b6-3-3-800x536.jpg"></div>
+                        <a class="full" data-src="wp-content/uploads/2017/10/b6.jpg" data-title="scelerisque"></a>
+                    </div>
+
+                    <div class="text">
+                        <h6>Ontario</h6>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        var c = document.body.className;
+        c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+        document.body.className = c;
+    </script>
+
+	<!--
+    <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
+	-->
+    <script type='text/javascript' src='wp-includes/js/imagesloaded.min.js'></script>
+    <script type='text/javascript' src='wp-includes/js/hoverIntent.min.js'></script>
+    <script type='text/javascript' src='wp-content/themes/thecs/js/theme/plugins/jquery.easing.min.js'></script>
+    <script type='text/javascript' src='wp-content/themes/thecs/js/theme/plugins/tweenjs-0.6.2.min.js'></script>
+	<!--
+    <script type='text/javascript' src='wp-content/themes/thecs/js/theme/plugins/viewportchecker.min.js'></script>
+    <script type='text/javascript' src='wp-content/themes/thecs/js/theme/plugins/owl.carousel.min.js'></script>
+	-->
+    <script type='text/javascript' src='wp-content/themes/thecs/js/theme/pt-plugins.min.js'></script>
+    <script type='text/javascript' src='wp-content/themes/thecs/js/theme/main.min.js'></script>
+	<!--
+    <script type='text/javascript' src='wp-includes/js/wp-embed.min.js'></script>
+	-->
+
+</body>
+
+</html>
